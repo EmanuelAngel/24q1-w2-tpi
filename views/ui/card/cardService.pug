@@ -1,0 +1,8 @@
+include card.pug
+include cardOffer.pug
+
+mixin cardService(product)
+  if product.offer
+    +cardOffer(product)
+  else
+    +card(product)

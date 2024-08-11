@@ -1,0 +1,12 @@
+doctype html
+html(lang="es" class="scroll-smooth")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        include ../meta/styles.pug
+        include ../meta/scripts.pug
+    body(class="accent-orange-600 dark:accent-orange-300 dark:bg-neutral-900 dark:text-neutral-50")
+        include ../ui/header.pug
+        div(class="max-w-screen-lg mx-auto my-32")
+            block content
+        include ../ui/footer.pug

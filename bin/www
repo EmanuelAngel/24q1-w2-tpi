@@ -1,0 +1,13 @@
+import { createApp } from '../app.js'
+
+const server = createApp()
+
+const PORT = process.env.PORT ?? 8080
+
+server.listen(PORT, () => {
+  console.log(
+    `Listening on port ${PORT}`,
+    `\nProducts API: http://localhost:${PORT}/products`,
+    `\nTranslation API: http://localhost:${PORT}/translate`
+  )
+})

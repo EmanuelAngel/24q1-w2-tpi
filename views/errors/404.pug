@@ -1,0 +1,13 @@
+extends ../layouts/baseLayout.pug
+
+block content
+  div(class="grid pb-16 pt-20 place-content-center bg-white px-4 dark:bg-neutral-900")
+    div(class="text-center")
+      h1(class="text-9xl font-black text-neutral-200 dark:text-neutral-700 ") 404
+      p(class="text-2xl font-bold tracking-tight text-neutral-900 sm:text-4xl dark:text-neutral-100") Epa!
+      p(class="mt-4 text-neutral-500") No pudimos encontrar la página que buscás.
+      a(
+        href="/"
+        class="mt-6 inline-block rounded bg-black px-5 py-3 text-sm font-medium text-white hover:ring-2 hover:ring-black hover:scale-105 hover:bg-white hover:text-black focus:outline-none transition-all duration-300 ease-in-out"
+      )
+        | Volver al inicio

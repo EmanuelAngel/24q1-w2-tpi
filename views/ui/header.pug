@@ -1,0 +1,11 @@
+header(class="w-full fixed z-[101] top-0 left-0 shadow-sm bg-white dark:bg-neutral-900/90 dark:shadow-neutral-800")
+  div(class="mx-auto flex h-16 max-w-screen-xl items-center gap-8 px-4 sm:px-6 lg:px-8")
+    a(class="block text-black dark:text-white" href="/")
+      span(class="sr-only") Home
+      include ../icons/logo.pug
+    div(class="flex flex-1 items-center justify-end")
+      div(class="flex items-center gap-4")
+        div(class="flex gap-2 sm:gap-4")
+          button(class="opacity-25 cursor-not-allowed block rounded-md bg-neutral-600 px-5 py-2.5 text-sm font-medium text-white transition hover:bg-neutral-700" href="#") Ir al carrito
+          button(id="colorModeBtn" type="button" class="block rounded-full bg-gray-100 p-2 text-sm font-medium text-neutral-600 transition hover:text-neutral-600/75 dark:text-neutral-50 dark:bg-black dark:hover:text-neutral-300/75")
+            include ../icons/sunMoon.pug

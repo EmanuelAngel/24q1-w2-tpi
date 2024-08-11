@@ -1,0 +1,10 @@
+extends layouts/baseLayout.pug
+
+include ui/card/cardService.pug
+
+block content
+  main(class="min-h-screen flex flex-col gap-12")
+    h1(class="text-4xl font-bold text-neutral-400/50") #{title}
+    div(class="grid grid-cols-1 gap-4 lg:grid-cols-4 lg:gap-8")
+      each product in products 
+        +cardService(product)
