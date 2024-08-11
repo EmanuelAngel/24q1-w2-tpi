@@ -8,6 +8,7 @@ server.listen(PORT, () => {
   console.log(
     `Listening on port ${PORT}`,
     `\nProducts API: http://localhost:${PORT}/products`,
-    `\nTranslation API: http://localhost:${PORT}/translate`
+    `\nTranslation API: http://localhost:${PORT}/translate`,
+    `\nCart: http://localhost:${PORT}/cart`
   )
 })

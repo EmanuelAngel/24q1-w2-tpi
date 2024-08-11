@@ -1,3 +1,5 @@
+import forms from '@tailwindcss/forms'
+
 /** @type {import('tailwindcss').Config} */
 export default {
   darkMode: 'selector',
@@ -34,5 +36,5 @@ export default {
       }
     }
   },
-  plugins: []
+  plugins: [forms]
 }
