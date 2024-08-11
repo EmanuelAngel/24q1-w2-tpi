@@ -1,7 +1,0 @@
-### Translate text
-POST http://localhost:8080/translate
-Content-Type: application/json
-
-{
-  "text": "Eat my whole beast"
-}
