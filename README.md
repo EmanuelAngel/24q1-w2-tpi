@@ -1,5 +1,5 @@
-#Resources used
+Resources used
 
-UI Components by [text](https://www.hyperui.dev/)
-Fake Products by [text](https://fakestoreapi.com/)
-Icons by [text](https://tabler.io/icons)
+UI Components by [HyperUI](https://www.hyperui.dev/)
+Fake Products by [Fake Store API](https://fakestoreapi.com/)
+Icons by [Tabler Icons](https://tabler.io/icons)
