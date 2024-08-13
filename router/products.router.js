@@ -58,7 +58,7 @@ products.get('/', async (req, res) => {
       })
     )
 
-    console.log(updatedProducts)
+    console.log(updatedProducts[1])
 
     res.render('products', { products: updatedProducts })
   } catch (error) {

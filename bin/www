@@ -1,12 +1,16 @@
 import { createApp } from '../app.js'
+import normalizePort from '../utils/normalizePort.js'
+import { createServer } from 'node:http'
 
-const server = createApp()
+const app = createApp()
 
-const PORT = process.env.PORT ?? 8080
+const PORT = normalizePort(process.env.PORT ?? 8080)
+
+const server = createServer(app)
 
 server.listen(PORT, () => {
   console.log(
-    `Listening on port ${PORT}`,
+    `Listening on port ${PORT}\n`,
     `\nProducts API: http://localhost:${PORT}/products`,
     `\nTranslation API: http://localhost:${PORT}/translate`,
     `\nCart: http://localhost:${PORT}/cart`

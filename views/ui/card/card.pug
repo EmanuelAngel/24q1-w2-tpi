@@ -12,7 +12,10 @@ mixin card(product)
           dt(class="sr-only") Price
           div(class="flex items-center gap-2 justify-between")
             dd(class="text-sm text-neutral-500 font-bold") $#{product.price}
-            button(type="button" class="rounded px-4 py-2 text-sm text-white bg-neutral-950 hover:bg-black dark:bg-neutral-100 dark:hover:bg-white dark:text-black hover:scale-110 transition-all duration-200")
+            button(
+              type="button"
+              class="rounded px-4 py-2 text-sm text-white bg-neutral-950 hover:bg-black dark:bg-neutral-100 dark:hover:bg-white dark:text-black hover:scale-110 transition-all duration-200"
+              data-product=`${JSON.stringify({ id: product.id, title: product.title, price: product.price, category: product.category, description: product.description, image: product.image })}`)
               include ../../icons/cartAdd.pug
 
         div(class="mt-2 sm:inline-flex sm:shrink-0 sm:items-center sm:gap-2")

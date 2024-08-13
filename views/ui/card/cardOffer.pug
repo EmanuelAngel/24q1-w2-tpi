@@ -25,7 +25,10 @@ mixin cardOffer(product)
                   include ../../icons/flame.pug
                   span #{product.offer.discount}%
 
-            button(type="button" class="rounded px-4 py-2 text-sm text-white bg-neutral-950 hover:bg-black dark:bg-neutral-100 dark:hover:bg-white dark:text-black hover:scale-110 transition-all duration-200")
+            button(
+              type="button"
+              class="rounded px-4 py-2 text-sm text-white bg-neutral-950 hover:bg-black dark:bg-neutral-100 dark:hover:bg-white dark:text-black hover:scale-110 transition-all duration-200"
+              data-product=`${JSON.stringify({ id: product.id, title: product.title, price: product.price, category: product.category, description: product.description, image: product.image, offer: product.offer })}`)
               include ../../icons/cartAdd.pug
           div(class="flex gap-1.5 items-baseline")
             span(class="font-extrabold text-xl") $#{product.offer.finalPrice}

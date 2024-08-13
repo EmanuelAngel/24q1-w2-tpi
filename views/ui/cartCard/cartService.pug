@@ -1,0 +1,8 @@
+include ./cartCard.pug
+include ./cartCardOffer.pug
+
+mixin cartCardService(product)
+  if product.offer
+    +cartCardOffer(product)
+  else
+    +cartCard(product)
