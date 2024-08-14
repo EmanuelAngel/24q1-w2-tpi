@@ -1,5 +1,5 @@
 mixin cartCardOffer(product)
-  li(data-product-id=`${product.id}` class="flex items-center gap-4")
+  li(data-product-id=`${product.id}` data-product-title=`${product.title}` data-product-price=`${product.price}` data-product-discounted=`${product.offer.amountDiscounted}` class="flex items-center gap-4")
     img(
       src=`${product.image}`
       alt=""
@@ -12,7 +12,7 @@ mixin cartCardOffer(product)
       dl(class="mt-0.5 space-y-px text-[10px] text-neutral-600 dark:text-neutral-400")
         div(class="flex items-center gap-1")
           dt(class="text-neutral-500") Precio: 
-          dd(class="text-sm text-neutral-600") $#{product.price}
+          dd(class="text-sm text-neutral-600") $#{product.offer.finalPrice}
           if product.offer.discount > 50
             span(class="text-orange-200 bg-orange-500 font-medium dark:text-orange-800 dark:bg-orange-600 rounded-full py-0.5 text-xs")
               include ../../icons/flame.pug

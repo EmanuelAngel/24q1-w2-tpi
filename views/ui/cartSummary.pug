@@ -1,0 +1,20 @@
+mixin cartSummary(product)
+  div(class="mt-8 flex justify-end border-t border-neutral-100 pt-8 dark:border-neutral-800")
+    div(class="w-screen max-w-lg space-y-4")
+      dl(class="space-y-0.5 text-sm text-neutral-700 dark:text-neutral-400")
+        div(class="flex justify-between!")
+          dt Subtotal: &nbsp;
+          dd $N
+
+        div(class="flex justify-between!")
+          dt Descuentos: &nbsp;
+          dd -$N
+
+        div(class="flex justify-between! text-base font-medium")
+          dt Total: &nbsp;
+          dd $N
+
+      div(class="space-y-4 text-right")
+        p(class="text-sm text-neutral-500 dark:text-neutral-400") <strong>N</strong> descuentos aplicados
+
+        button(class="block w-full rounded font-bold bg-black p-2.5 text-sm text-white transition hover:bg-neutral-600 dark:bg-white dark:text-neutral-900 dark:hover:bg-neutral-200") Pagar

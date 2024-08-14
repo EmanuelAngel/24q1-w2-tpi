@@ -19,21 +19,25 @@ block content
               dl(class="space-y-0.5 text-sm text-neutral-700 dark:text-neutral-400")
                 div(class="flex justify-between!")
                   dt Subtotal: &nbsp;
-                  dd $150
+                  dd(id="subtotal") Calculando...
 
                 div(class="flex justify-between!")
-                  dt IVA: &nbsp;
-                  dd $200000
+                  dt Impuestos: &nbsp;
+                  dd(id="taxes") Calculando... 
 
                 div(class="flex justify-between!")
                   dt Descuentos: &nbsp;
-                  dd -$30
+                  dd(id="discounts") Calculando...
 
                 div(class="flex justify-between! text-base font-medium")
                   dt Total: &nbsp;
-                  dd $140
+                  dd(id="total") Calculando...
 
               div(class="space-y-4 text-right")
-                p(class="text-sm text-neutral-500 dark:text-neutral-400") <strong>2</strong> descuentos aplicados
+                p(class="text-sm text-neutral-500 dark:text-neutral-400")
+                  strong(id="discountsQuantity") Calculando...
 
                 button(class="block w-full rounded font-bold bg-black p-2.5 text-sm text-white transition hover:bg-neutral-600 dark:bg-white dark:text-neutral-900 dark:hover:bg-neutral-200") Pagar
+
+  script(src="/js/cardDelete.js" defer type="module")
+  script(src="/js/cartSummary.js" defer type="module")

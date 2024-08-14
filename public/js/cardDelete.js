@@ -1,3 +1,5 @@
+import { calculateSummary } from './cartSummary.js'
+
 document.addEventListener('DOMContentLoaded', () => {
   document
     .querySelectorAll('button[data-product-id-delete]')
@@ -26,6 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 `[data-product-id="${productId}"]`
               )
               product.remove()
+              calculateSummary()
             } else {
               alert('Error al eliminar el producto')
             }

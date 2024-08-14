@@ -4,3 +4,4 @@ pnpm-lock.yaml
 .prettierrc
 api
 placeholder.html
+data/cart.json

@@ -1,5 +1,5 @@
 mixin cartCard(product)
-  li(data-product-id=`${product.id}` class="flex items-center gap-4")
+  li(data-product-id=`${product.id}` data-product-title=`${product.title}` data-product-price=`${product.price}` class="flex items-center gap-4")
     img(
       src=`${product.image}`
       alt=""
